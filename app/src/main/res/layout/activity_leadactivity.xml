@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_activity_lead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/ll_buttom_activity_lead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_icon_activity_lead_1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@mipmap/adware_style_default"
+            />
+        <ImageView
+            android:id="@+id/iv_icon_activity_lead_2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="@dimen/iv_icon_activity_lead_between"
+            android:background="@mipmap/adware_style_default"
+            />
+        <ImageView
+            android:id="@+id/iv_icon_activity_lead_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="@dimen/iv_icon_activity_lead_between"
+            android:background="@mipmap/adware_style_default"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启全新的体验"
+        android:background="@drawable/shape_activity_lead"
+        android:onClick="enter"
+        android:layout_above="@+id/ll_buttom_activity_lead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>
